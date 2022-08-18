@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="?selectableItemBackground"
+    android:layout_marginTop="4dp">
+<View
+    android:id="@+id/priority_one"
+    android:layout_width="18dp"
+    android:layout_height="18dp"
+    android:background="@drawable/green_shape"
+    android:layout_margin="10dp"
+    android:layout_gravity="end">
+
+</View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/note_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:maxLines="2"
+            android:text="Your Note Here"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/amount_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/note_one"
+            android:text="200"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/date_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount_one"
+            android:text="07 October 1999 03:59 "
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
